@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -38,7 +39,7 @@
 
     <!-- Container -->
 
-    <div class="container row">
+    <div class="container row mx-auto">
         <!-- Sidebar -->
         <div class="col-12 col-lg-3">
 
@@ -55,24 +56,35 @@
             </div>
 
             <!--Categories -->
-            <div class="d-none d-lg-block">
-                <h4>Categorías</h4>
+            <div class="d-none d-lg-block mt-5">
+                <h5>Categorías</h5>
                 <ul class="list-group">
-                    <li class="list-group-item active">Todos</li>
-                    <li class="list-group-item">Hombre</li>
-                    <li class="list-group-item">Mujer</li>
-                    <li class="list-group-item">Hipster</li>
-                    <li class="list-group-item">Metal</li>
-                    <li class="list-group-item">Universidad</li>
-                    <li class="list-group-item">Deportiva</li>
-                    <li class="list-group-item">Rayas</li>
-                    <li class="list-group-item">Apretada</li>
+                    <li class="list-group-item active d-flex justify-content-between">Todos <span
+                            class="badge badge-pill badge-secondary my-auto">10</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">Hombre <span
+                            class="badge badge-pill badge-secondary my-auto">100</span></li>
+                    <li class="list-group-item d-flex justify-content-between my-auto">Mujer <span
+                            class="badge badge-pill badge-secondary my-auto">45</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Hipster <span
+                            class="badge badge-pill badge-secondary my-auto">88</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Metal <span
+                            class="badge badge-pill badge-secondary my-auto">99</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Universidad <span
+                            class="badge badge-pill badge-secondary my-auto">69</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">Deportiva <span
+                            class="badge badge-pill badge-secondary my-auto">13</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Rayas <span
+                            class="badge badge-pill badge-secondary my-auto">2019</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Apretada <span
+                            class="badge badge-pill badge-secondary my-auto">24</span></li>
                 </ul>
             </div>
         </div>
 
         <!-- Main Content -->
-        <div class="row col-12 col-lg-9">
+        <div class="row col-12 col-lg-9 mx-auto">
             <!-- Carousel -->
             <div id="carouselExampleIndicators" class="carousel slide mt-3 col-12" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -102,64 +114,54 @@
             </div>
 
             <!-- Cards -->
-            <div class="row p-3">
-                <div class="card mx-1 col-6 col-md-4" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="row pl-4 mt-1 d-flex justify-content-start">
+                <div class="card mx-2 my-1 col-6 col-md-4" style="max-width: 200px;">
+                    <img class="card-img-top" src="images/products/camiseta-1.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Hipster Ultimate</h5>
+                        <p>L camiseta ideal para hipsters</p>
+                        <a href="#" class="btn btn-primary">$120 <i class="fas fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark" data-toggle="modal" data-target="#Modal1">Detalles</a>
                     </div>
                 </div>
 
-                <div class="card p-2 col-6 col-md-4" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                <div class=" card mx-2 my-1 col-6 col-md-4" style="max-width: 200px;">
+                    <img class="card-img-top" src="images/products/camiseta-2.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">On motion live</h5>
+                        <p>Perfecta para salidas rocosas</p>
+                        <a href="#" class="btn btn-primary">$180 <i class="fas fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark">Detalles</a>
                     </div>
                 </div>
 
-                <div class="card p-2 col-6 col-md-4" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card mx-2 my-1 col-6 col-md-4" style="max-width: 200px;">
+                    <img class="card-img-top" src="images/products/camiseta-3.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Underground max</h5>
+                        <p>Para los amantes del underground</p>
+                        <a href="#" class="btn btn-primary">$250 <i class="fas fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark">Detalles</a>
                     </div>
                 </div>
 
-                <div class="card p-2 col-6 col-md-4" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card mx-2 my-1 col-6 col-md-4" style="max-width: 200px;">
+                    <img class="card-img-top" src="images/products/camiseta-4.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Santo Domingo Tigers</h5>
+                        <p>En honor a este gran equipo</p>
+                        <a href="#" class="btn btn-primary">$300 <i class="fas fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark">Detalles</a>
                     </div>
                 </div>
 
-                <div class="card p-2 col-6 col-md-4" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card mx-2 my-1 col-6 col-md-4" style="max-width: 200px;">
+                    <img class="card-img-top" src="images/products/camiseta-5.jpg" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Una camiseta más</h5>
+                        <p>Nunca sobra una asi de cool</p>
+                        <a href="#" class="btn btn-primary">$200 <i class="fas fa-shopping-cart"></i></a>
+                        <a class="btn btn-outline-dark">Detalles</a>
                     </div>
                 </div>
             </div>
@@ -167,8 +169,85 @@
 
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Modal -->
+
+    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hipster Ultimate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-primary" role="alert">
+                        <i class="fas fa-info-circle"></i> Este producto está agotado
+                    </div>
+                    <div class="row">
+                        <img class="border mx-3 col-4" src="images/products/camiseta-1.jpg" alt="Hipster">
+                        <div class="col-5">
+                            <h6>Precio: <strong>$299</strong></h6>
+                            <p class="mt-3">Calificación:
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+                            <p>
+                                <span class="badge badge-warning">Hipster</span>
+                                <span class="badge badge-secondary">Deportiva</span>
+                                <br>
+                            </p>
+                            <a class="my-5" href="#"><i class="fas fa-heart"></i> Agregar a los deseos</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs mx-3" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Descripción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Comentarios</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active m-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        Lorem
+                        ipsum dolor
+                        sit, amet consectetur adipisicing elit. Possimus nam, magnam illo dolorum quam esse assumenda
+                        quis
+                        reiciendis sit sed? Inventore minus eligendi cum perspiciatis sunt earum ipsa voluptatibus
+                        omnis?</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="card m-3">
+                            <div class="card-header">
+                                Germán Escobar comentó hace dos días:
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>Esta camiseta está increíble ¡La quierio!</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="form-group m-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Ingresa tu comentario"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
